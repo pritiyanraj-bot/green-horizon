@@ -1,0 +1,186 @@
+<svg viewBox="0 0 380 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Modern commercial building integrating green roof, living wall facade, and natural shading">
+  <defs>
+    <linearGradient id="sol1-sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e3f5ec"/>
+      <stop offset="55%" stop-color="#cdeee1"/>
+      <stop offset="100%" stop-color="#b8e5d3"/>
+    </linearGradient>
+    <linearGradient id="sol1-roof-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#72b34a"/>
+      <stop offset="50%" stop-color="#55993b"/>
+      <stop offset="100%" stop-color="#286752"/>
+    </linearGradient>
+    <linearGradient id="sol1-glass-sw" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4f3e8"/>
+      <stop offset="100%" stop-color="#9ddbc7"/>
+    </linearGradient>
+    <linearGradient id="sol1-glass-se" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eaf8f4"/>
+      <stop offset="100%" stop-color="#bfe8dc"/>
+    </linearGradient>
+    <pattern id="sol1-pavers" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M 12 0 L 0 0 0 12" fill="none" stroke="#174d3b" stroke-width="0.6" stroke-opacity="0.2"/>
+    </pattern>
+    <filter id="sol1-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#103d30" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Sky Canvas Base -->
+  <rect width="100%" height="100%" fill="url(#sol1-sky)"/>
+
+  <!-- Warm Directional Sunlight (Upper Right) -->
+  <g transform="translate(325, 36)">
+    <circle cx="0" cy="0" r="26" fill="#fbbf24" opacity="0.18"/>
+    <circle cx="0" cy="0" r="15" fill="#facc15" opacity="0.4"/>
+    <circle cx="0" cy="0" r="8" fill="#f59e0b"/>
+    <!-- Incident solar radiation rays -->
+    <line x1="-12" y1="10" x2="-42" y2="35" stroke="#f59e0b" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <line x1="-18" y1="3" x2="-58" y2="24" stroke="#f59e0b" stroke-width="1.2" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Ground Plane (Permeable Plaza & Sidewalk) -->
+  <polygon points="15,145 190,65 365,145 190,225" fill="#e7e5d8"/>
+  <polygon points="15,145 190,65 365,145 190,225" fill="url(#sol1-pavers)"/>
+  <polygon points="15,145 190,65 365,145 190,225" fill="none" stroke="#174d3b" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- Building Cast Ground Shadow -->
+  <polygon points="65,160 190,85 240,110 135,190" fill="#173d30" opacity="0.2"/>
+
+  <!-- Permeable Bioswale Ribbon (Foreground Left) -->
+  <polygon points="25,150 95,118 115,130 45,162" fill="#84cc16" opacity="0.35"/>
+  <polygon points="25,150 95,118 115,130 45,162" fill="none" stroke="#174d3b" stroke-width="0.8" stroke-dasharray="2 2"/>
+  <circle cx="50" cy="148" r="3.5" fill="#286752"/>
+  <circle cx="68" cy="140" r="4.5" fill="#3b8253"/>
+  <circle cx="88" cy="132" r="3.5" fill="#84cc16"/>
+
+  <!-- ================= COMMERCIAL RETROFIT BUILDING ================= -->
+  <g filter="url(#sol1-shadow)">
+    <!-- Base Plinth & Perimeter Planter Edge -->
+    <polygon points="90,165 190,120 280,158 180,203" fill="#dfded2" stroke="#174d3b" stroke-width="1.2"/>
+    <polygon points="86,163 186,118 190,120 90,165" fill="#286752"/>
+    <polygon points="186,118 276,156 280,158 190,120" fill="#174d3b"/>
+
+    <!-- SOUTHWEST FACADE: VERTICAL LIVING WALL (Front-Left) -->
+    <polygon points="90,162 190,117 190,48 90,93" fill="#f4f2e6" stroke="#174d3b" stroke-width="1.3"/>
+
+    <!-- Architectural Window Bays (Southwest Facade) -->
+    <g fill="url(#sol1-glass-sw)" stroke="#174d3b" stroke-width="0.9">
+      <!-- Floor 1 Windows -->
+      <polygon points="98,150 135,133 135,117 98,134"/>
+      <!-- Floor 2 Windows -->
+      <polygon points="98,127 135,110 135,94 98,111"/>
+    </g>
+
+    <!-- Living Wall Trellis Frame (Spanning Southwest Bay) -->
+    <g stroke="#174d3b" stroke-width="0.8">
+      <line x1="145" y1="128" x2="185" y2="110" stroke-dasharray="2 2"/>
+      <line x1="145" y1="114" x2="185" y2="96" stroke-dasharray="2 2"/>
+      <line x1="145" y1="100" x2="185" y2="82" stroke-dasharray="2 2"/>
+      <line x1="145" y1="86" x2="185" y2="68" stroke-dasharray="2 2"/>
+      <!-- Vertical support guide cables -->
+      <line x1="152" y1="125" x2="152" y2="78" stroke-width="1"/>
+      <line x1="164" y1="120" x2="164" y2="73" stroke-width="1"/>
+      <line x1="176" y1="114" x2="176" y2="67" stroke-width="1"/>
+    </g>
+
+    <!-- Lush Vertical Foliage Clusters on Trellis -->
+    <g stroke="#174d3b" stroke-width="0.75">
+      <ellipse cx="150" cy="120" rx="9" ry="14" fill="#286752"/>
+      <ellipse cx="162" cy="112" rx="11" ry="16" fill="#3b8253"/>
+      <ellipse cx="178" cy="105" rx="8" ry="12" fill="#529938"/>
+      <ellipse cx="154" cy="98" rx="10" ry="13" fill="#84cc16"/>
+      <ellipse cx="168" cy="90" rx="12" ry="15" fill="#286752"/>
+      <ellipse cx="180" cy="80" rx="7" ry="10" fill="#a3e635"/>
+      <ellipse cx="158" cy="78" rx="8" ry="11" fill="#3b8253"/>
+      <ellipse cx="172" cy="68" rx="9" ry="12" fill="#84cc16"/>
+    </g>
+
+    <!-- SOUTHEAST FACADE: MODERN HIGH-EFFICIENCY CURTAIN WALL (Front-Right) -->
+    <polygon points="190,117 280,155 280,86 190,48" fill="#eae8db" stroke="#174d3b" stroke-width="1.3"/>
+
+    <!-- Floor Band Slab Dividers -->
+    <line x1="190" y1="95" x2="280" y2="133" stroke="#174d3b" stroke-width="1.5"/>
+    <line x1="190" y1="72" x2="280" y2="110" stroke="#174d3b" stroke-width="1.5"/>
+
+    <!-- Large Glazing Bays with Cool Reflections -->
+    <g fill="url(#sol1-glass-se)" stroke="#174d3b" stroke-width="0.9">
+      <!-- Ground Floor Entrance & Lobby Glazing -->
+      <polygon points="198,112 232,126 232,102 198,88"/>
+      <polygon points="238,129 272,143 272,119 238,105"/>
+      <!-- Level 2 Window Bays -->
+      <polygon points="198,89 232,103 232,79 198,65"/>
+      <polygon points="238,106 272,120 272,96 238,82"/>
+    </g>
+
+    <!-- External Architectural Louvers / Sunshade Overhangs (Brise-Soleil) -->
+    <g stroke="#174d3b" stroke-width="1.4" stroke-linecap="round">
+      <line x1="196" y1="87" x2="234" y2="101"/>
+      <line x1="236" y1="104" x2="274" y2="118"/>
+      <line x1="196" y1="63" x2="234" y2="77"/>
+      <line x1="236" y1="80" x2="274" y2="94"/>
+    </g>
+
+    <!-- INTENSIVE GREEN ROOF & RETROFIT SEDUM TERRACE -->
+    <!-- Green Roof Base Substrate Slab -->
+    <polygon points="90,93 190,48 280,86 180,131" fill="url(#sol1-roof-grad)" stroke="#174d3b" stroke-width="1.4"/>
+    
+    <!-- Parapet Thickness Lip -->
+    <polygon points="90,93 180,131 183,132 90,95" fill="#174d3b"/>
+    <polygon points="180,131 280,86 280,88 183,132" fill="#286752"/>
+
+    <!-- Intensive Rooftop Planting Clusters (Sedum, Shrubbery, Wildflowers) -->
+    <g stroke="#174d3b" stroke-width="0.9">
+      <ellipse cx="120" cy="85" rx="14" ry="7" fill="#286752"/>
+      <ellipse cx="145" cy="74" rx="16" ry="8" fill="#3b8253"/>
+      <ellipse cx="170" cy="65" rx="14" ry="7" fill="#529938"/>
+      <ellipse cx="140" cy="86" rx="12" ry="6" fill="#84cc16"/>
+      <ellipse cx="165" cy="78" rx="15" ry="8" fill="#286752"/>
+      <ellipse cx="190" cy="70" rx="13" ry="7" fill="#72b34a"/>
+      <ellipse cx="215" cy="62" rx="11" ry="6" fill="#84cc16"/>
+      <ellipse cx="185" cy="88" rx="12" ry="6" fill="#3b8253"/>
+      <ellipse cx="210" cy="80" rx="14" ry="7" fill="#286752"/>
+      <ellipse cx="235" cy="75" rx="12" ry="6" fill="#529938"/>
+      <ellipse cx="255" cy="82" rx="9" ry="5" fill="#84cc16"/>
+    </g>
+
+    <!-- Rooftop Access Pavilion / Bio-Solar Structure -->
+    <polygon points="140,55 170,42 195,53 165,66" fill="#f7f6ed" stroke="#174d3b" stroke-width="1.1"/>
+    <polygon points="140,55 165,66 165,75 140,64" fill="#dfded2" stroke="#174d3b" stroke-width="1.1"/>
+    <polygon points="165,66 195,53 195,62 165,75" fill="#c7c5b5" stroke="#174d3b" stroke-width="1.1"/>
+    <!-- Solar PV Array on Rooftop Access Eaves -->
+    <polygon points="142,52 168,40 190,50 164,62" fill="#1b4d3c" stroke="#84cc16" stroke-width="0.9"/>
+  </g>
+
+  <!-- ================= SURROUNDING NATURE & PLAZA SCALE ================= -->
+  <!-- Mature Deciduous Tree (Front Right Ground) -->
+  <g transform="translate(305, 175)" stroke="#174d3b" stroke-width="1.2">
+    <!-- Tree Trunk -->
+    <path d="M 0 0 Q -2 -18 0 -35 Q 3 -18 2 0" fill="#5a3d28"/>
+    <!-- Soft Tree Ground Shadow -->
+    <ellipse cx="-12" cy="2" rx="22" ry="8" fill="#173d30" opacity="0.25" stroke="none"/>
+    <!-- Canopy Foliage Spheres -->
+    <circle cx="-10" cy="-40" r="18" fill="#174d3b"/>
+    <circle cx="8" cy="-45" r="22" fill="#286752"/>
+    <circle cx="-2" cy="-60" r="17" fill="#4d8f37"/>
+    <circle cx="10" cy="-56" r="14" fill="#84cc16"/>
+  </g>
+
+  <!-- Smaller Shade Tree & Planter Bench (Front Left Ground) -->
+  <g transform="translate(65, 175)" stroke="#174d3b" stroke-width="1">
+    <ellipse cx="10" cy="5" rx="16" ry="6" fill="#173d30" opacity="0.2" stroke="none"/>
+    <path d="M 0 0 Q -1 -12 0 -24" fill="none" stroke-width="2" stroke="#5a3d28"/>
+    <circle cx="-5" cy="-28" r="12" fill="#286752"/>
+    <circle cx="5" cy="-32" r="14" fill="#529938"/>
+    <circle cx="0" cy="-40" r="10" fill="#84cc16"/>
+    <!-- Circular Planter Curb Bench -->
+    <ellipse cx="0" cy="2" rx="12" ry="5" fill="#f7f6ed" stroke="#174d3b" stroke-width="1"/>
+  </g>
+
+  <!-- Cool Air Evaporative Flow Indicators (Subtle Dashed Breeze Vectors) -->
+  <path d="M 70 85 Q 110 55 160 38" fill="none" stroke="#0d9488" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <polygon points="163,37 155,37 158,43" fill="#0d9488"/>
+
+  <path d="M 120 160 Q 155 140 185 105" fill="none" stroke="#14b8a6" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <polygon points="187,103 180,105 184,111" fill="#14b8a6"/>
+</svg>

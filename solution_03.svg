@@ -1,0 +1,236 @@
+<svg viewBox="0 0 380 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Isometric urban green corridor connecting parks, tree-lined pathways and permeable surfaces through a city block">
+  <defs>
+    <linearGradient id="s3-sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f5f0"/>
+      <stop offset="55%" stop-color="#d4eee4"/>
+      <stop offset="100%" stop-color="#c0e5d7"/>
+    </linearGradient>
+    <linearGradient id="s3-corridor-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7ec862"/>
+      <stop offset="50%" stop-color="#5faf47"/>
+      <stop offset="100%" stop-color="#3d8830"/>
+    </linearGradient>
+    <linearGradient id="s3-pavement" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f2f0e4"/>
+      <stop offset="100%" stop-color="#e2e0d0"/>
+    </linearGradient>
+    <linearGradient id="s3-bldg-a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4f2e6"/>
+      <stop offset="100%" stop-color="#dddbd0"/>
+    </linearGradient>
+    <linearGradient id="s3-bldg-b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eae8db"/>
+      <stop offset="100%" stop-color="#d2d0c4"/>
+    </linearGradient>
+    <pattern id="s3-permeable" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect x="1" y="1" width="8" height="8" fill="none" stroke="#174d3b" stroke-width="0.6" stroke-opacity="0.3"/>
+    </pattern>
+    <pattern id="s3-lawn" width="8" height="8" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="8" x2="8" y2="0" stroke="#4d8e3e" stroke-width="0.8" opacity="0.3"/>
+    </pattern>
+    <filter id="s3-shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#103d30" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="380" height="240" fill="url(#s3-sky)"/>
+
+  <!-- ===== ISOMETRIC GROUND PLANE ===== -->
+  <!-- Full ground base -->
+  <polygon points="0,120 190,30 380,120 190,210" fill="#c8ead8"/>
+  <!-- Permeable paving overlay texture -->
+  <polygon points="0,120 190,30 380,120 190,210" fill="url(#s3-permeable)"/>
+
+  <!-- ===== BLOCK A — UPPER LEFT BUILDING ===== -->
+  <g filter="url(#s3-shadow)">
+    <!-- Footprint / plinth -->
+    <polygon points="18,112 88,74 118,88 48,126" fill="#dedad0" stroke="#174d3b" stroke-width="0.9"/>
+    <!-- Left facade -->
+    <polygon points="18,112 48,126 48,175 18,161" fill="url(#s3-bldg-a)" stroke="#174d3b" stroke-width="1.1"/>
+    <!-- Right facade -->
+    <polygon points="48,126 118,88 118,137 48,175" fill="url(#s3-bldg-b)" stroke="#174d3b" stroke-width="1.1"/>
+    <!-- Window bays left -->
+    <polygon points="24,132 40,138 40,154 24,148" fill="#b8ddd0" stroke="#174d3b" stroke-width="0.7"/>
+    <!-- Window bays right (x2) -->
+    <polygon points="55,135 80,124 80,140 55,151" fill="#c8e8d8" stroke="#174d3b" stroke-width="0.7"/>
+    <polygon points="84,122 109,111 109,127 84,138" fill="#c8e8d8" stroke="#174d3b" stroke-width="0.7"/>
+    <!-- Rooftop green sedum -->
+    <polygon points="18,112 88,74 118,88 48,126" fill="#84cc16" opacity="0.45"/>
+    <ellipse cx="52" cy="98" rx="10" ry="5" fill="#286752"/>
+    <ellipse cx="70" cy="90" rx="12" ry="6" fill="#529938"/>
+    <ellipse cx="88" cy="82" rx="9" ry="4.5" fill="#84cc16"/>
+  </g>
+
+  <!-- ===== BLOCK B — UPPER RIGHT BUILDING ===== -->
+  <g filter="url(#s3-shadow)">
+    <polygon points="262,74 332,112 362,98 292,60" fill="#dedad0" stroke="#174d3b" stroke-width="0.9"/>
+    <!-- Left facade -->
+    <polygon points="262,74 292,60 292,109 262,123" fill="url(#s3-bldg-a)" stroke="#174d3b" stroke-width="1.1"/>
+    <!-- Right facade -->
+    <polygon points="292,60 362,98 362,147 292,109" fill="url(#s3-bldg-b)" stroke="#174d3b" stroke-width="1.1"/>
+    <!-- Windows -->
+    <polygon points="268,90 284,86 284,102 268,106" fill="#b8ddd0" stroke="#174d3b" stroke-width="0.7"/>
+    <polygon points="299,79 324,90 324,106 299,95" fill="#c8e8d8" stroke="#174d3b" stroke-width="0.7"/>
+    <polygon points="328,92 353,103 353,119 328,108" fill="#c8e8d8" stroke="#174d3b" stroke-width="0.7"/>
+    <!-- Rooftop green -->
+    <polygon points="262,74 332,112 362,98 292,60" fill="#84cc16" opacity="0.4"/>
+    <ellipse cx="296" cy="78" rx="10" ry="5" fill="#286752"/>
+    <ellipse cx="315" cy="88" rx="12" ry="6" fill="#529938"/>
+    <ellipse cx="335" cy="98" rx="9" ry="4.5" fill="#84cc16"/>
+  </g>
+
+  <!-- ===== GREEN CORRIDOR SPINE — DIAGONAL AXIS THROUGH BLOCK ===== -->
+  <!-- Left arm of corridor (NW–Centre) -->
+  <polygon points="25,144 70,119 115,135 70,160" fill="url(#s3-corridor-green)"/>
+  <polygon points="25,144 70,119 115,135 70,160" fill="url(#s3-lawn)" opacity="0.5"/>
+
+  <!-- Centre connecting node — Park / Square -->
+  <polygon points="115,135 190,97 265,135 190,173" fill="url(#s3-corridor-green)"/>
+  <polygon points="115,135 190,97 265,135 190,173" fill="url(#s3-lawn)" opacity="0.5"/>
+  <!-- Central park inner lawn diamond (lighter) -->
+  <polygon points="140,135 190,112 240,135 190,158" fill="#a0d882" opacity="0.8"/>
+
+  <!-- Right arm of corridor (Centre–SE) -->
+  <polygon points="265,135 310,112 355,128 310,151" fill="url(#s3-corridor-green)"/>
+  <polygon points="265,135 310,112 355,128 310,151" fill="url(#s3-lawn)" opacity="0.5"/>
+
+  <!-- Forward arm of corridor (S promenade) -->
+  <polygon points="165,155 215,155 220,210 160,210" fill="url(#s3-corridor-green)"/>
+  <polygon points="165,155 215,155 220,210 160,210" fill="url(#s3-lawn)" opacity="0.5"/>
+
+  <!-- Corridor border / kerb lines -->
+  <polygon points="25,144 70,119 115,135 70,160" fill="none" stroke="#174d3b" stroke-width="1" stroke-dasharray="3 2"/>
+  <polygon points="115,135 190,97 265,135 190,173" fill="none" stroke="#174d3b" stroke-width="1.2"/>
+  <polygon points="265,135 310,112 355,128 310,151" fill="none" stroke="#174d3b" stroke-width="1" stroke-dasharray="3 2"/>
+  <polygon points="165,155 215,155 220,210 160,210" fill="none" stroke="#174d3b" stroke-width="1" stroke-dasharray="3 2"/>
+
+  <!-- ===== TREE-LINED PATHWAYS ALONG CORRIDOR EDGES ===== -->
+  <!-- Trees — NW arm, left row -->
+  <g>
+    <!-- Tree N1 -->
+    <g transform="translate(38, 143)">
+      <ellipse cx="0" cy="3" rx="10" ry="4" fill="#1d4a30" opacity="0.25"/>
+      <line x1="0" y1="0" x2="0" y2="-16" stroke="#5a3d28" stroke-width="2"/>
+      <circle cx="-3" cy="-22" r="10" fill="#174d3b"/>
+      <circle cx="5" cy="-25" r="12" fill="#286752"/>
+      <circle cx="-1" cy="-32" r="9" fill="#529938"/>
+      <circle cx="4" cy="-34" r="7" fill="#84cc16"/>
+    </g>
+    <!-- Tree N2 -->
+    <g transform="translate(72, 128)">
+      <ellipse cx="0" cy="3" rx="9" ry="3.5" fill="#1d4a30" opacity="0.22"/>
+      <line x1="0" y1="0" x2="0" y2="-14" stroke="#5a3d28" stroke-width="2"/>
+      <circle cx="-4" cy="-19" r="9" fill="#174d3b"/>
+      <circle cx="4" cy="-22" r="11" fill="#3b8253"/>
+      <circle cx="-1" cy="-30" r="8" fill="#72b34a"/>
+      <circle cx="4" cy="-31" r="6" fill="#84cc16"/>
+    </g>
+    <!-- Tree N3 -->
+    <g transform="translate(98, 136)">
+      <ellipse cx="0" cy="3" rx="9" ry="3.5" fill="#1d4a30" opacity="0.22"/>
+      <line x1="0" y1="0" x2="0" y2="-14" stroke="#5a3d28" stroke-width="2"/>
+      <circle cx="-3" cy="-19" r="9" fill="#174d3b"/>
+      <circle cx="5" cy="-22" r="11" fill="#286752"/>
+      <circle cx="0" cy="-30" r="8" fill="#529938"/>
+      <circle cx="4" cy="-32" r="6" fill="#84cc16"/>
+    </g>
+  </g>
+
+  <!-- Trees — NE arm -->
+  <g>
+    <g transform="translate(278, 130)">
+      <ellipse cx="0" cy="3" rx="9" ry="3.5" fill="#1d4a30" opacity="0.22"/>
+      <line x1="0" y1="0" x2="0" y2="-14" stroke="#5a3d28" stroke-width="2"/>
+      <circle cx="-4" cy="-19" r="9" fill="#174d3b"/>
+      <circle cx="4" cy="-23" r="11" fill="#286752"/>
+      <circle cx="-1" cy="-30" r="8" fill="#72b34a"/>
+      <circle cx="4" cy="-32" r="6" fill="#84cc16"/>
+    </g>
+    <g transform="translate(310, 118)">
+      <ellipse cx="0" cy="3" rx="9" ry="3.5" fill="#1d4a30" opacity="0.22"/>
+      <line x1="0" y1="0" x2="0" y2="-14" stroke="#5a3d28" stroke-width="2"/>
+      <circle cx="-4" cy="-19" r="9" fill="#174d3b"/>
+      <circle cx="4" cy="-22" r="11" fill="#3b8253"/>
+      <circle cx="-1" cy="-30" r="8" fill="#529938"/>
+      <circle cx="4" cy="-31" r="6" fill="#84cc16"/>
+    </g>
+    <g transform="translate(340, 128)">
+      <ellipse cx="0" cy="3" rx="9" ry="3.5" fill="#1d4a30" opacity="0.22"/>
+      <line x1="0" y1="0" x2="0" y2="-14" stroke="#5a3d28" stroke-width="2"/>
+      <circle cx="-3" cy="-19" r="9" fill="#174d3b"/>
+      <circle cx="4" cy="-22" r="11" fill="#286752"/>
+      <circle cx="0" cy="-29" r="8" fill="#72b34a"/>
+      <circle cx="4" cy="-32" r="6" fill="#84cc16"/>
+    </g>
+  </g>
+
+  <!-- ===== CENTRAL PARK NODE FEATURES ===== -->
+  <!-- Circular water feature / fountain -->
+  <circle cx="190" cy="135" r="16" fill="#9ee0eb" stroke="#174d3b" stroke-width="1.2"/>
+  <circle cx="190" cy="135" r="10" fill="#6dd4e4" stroke="#174d3b" stroke-width="0.8"/>
+  <circle cx="190" cy="135" r="4.5" fill="#2d9ab5"/>
+  <!-- Fountain ripple lines -->
+  <circle cx="190" cy="135" r="13" fill="none" stroke="#174d3b" stroke-width="0.6" stroke-dasharray="2 2"/>
+
+  <!-- Central park large canopy tree (left of fountain) -->
+  <g transform="translate(163, 132)" filter="url(#s3-shadow)">
+    <ellipse cx="0" cy="4" rx="14" ry="6" fill="#1d4a30" opacity="0.25"/>
+    <line x1="0" y1="0" x2="-1" y2="-20" stroke="#5a3d28" stroke-width="2.5"/>
+    <circle cx="-6" cy="-28" r="15" fill="#174d3b"/>
+    <circle cx="6" cy="-33" r="18" fill="#286752"/>
+    <circle cx="-3" cy="-46" r="14" fill="#4d8f37"/>
+    <circle cx="7" cy="-49" r="11" fill="#84cc16"/>
+  </g>
+
+  <!-- Central park large canopy tree (right of fountain) -->
+  <g transform="translate(217, 132)" filter="url(#s3-shadow)">
+    <ellipse cx="0" cy="4" rx="14" ry="6" fill="#1d4a30" opacity="0.25"/>
+    <line x1="0" y1="0" x2="1" y2="-20" stroke="#5a3d28" stroke-width="2.5"/>
+    <circle cx="6" cy="-28" r="15" fill="#174d3b"/>
+    <circle cx="-6" cy="-33" r="18" fill="#286752"/>
+    <circle cx="3" cy="-46" r="14" fill="#4d8f37"/>
+    <circle cx="-7" cy="-49" r="11" fill="#84cc16"/>
+  </g>
+
+  <!-- Park seating ring around fountain -->
+  <g stroke="#174d3b" stroke-width="1" fill="#f7f6ed">
+    <rect x="172" y="152" width="14" height="4" rx="1.5"/>
+    <rect x="194" y="152" width="14" height="4" rx="1.5"/>
+  </g>
+
+  <!-- ===== LOWER PROMENADE TREES ===== -->
+  <g transform="translate(155, 170)" filter="url(#s3-shadow)">
+    <ellipse cx="0" cy="3" rx="10" ry="4" fill="#1d4a30" opacity="0.22"/>
+    <line x1="0" y1="0" x2="0" y2="-16" stroke="#5a3d28" stroke-width="2"/>
+    <circle cx="-4" cy="-22" r="10" fill="#174d3b"/>
+    <circle cx="4" cy="-26" r="13" fill="#286752"/>
+    <circle cx="0" cy="-36" r="10" fill="#529938"/>
+    <circle cx="5" cy="-38" r="8" fill="#84cc16"/>
+  </g>
+  <g transform="translate(225, 170)" filter="url(#s3-shadow)">
+    <ellipse cx="0" cy="3" rx="10" ry="4" fill="#1d4a30" opacity="0.22"/>
+    <line x1="0" y1="0" x2="0" y2="-16" stroke="#5a3d28" stroke-width="2"/>
+    <circle cx="-4" cy="-22" r="10" fill="#174d3b"/>
+    <circle cx="4" cy="-26" r="13" fill="#286752"/>
+    <circle cx="0" cy="-36" r="10" fill="#529938"/>
+    <circle cx="5" cy="-38" r="8" fill="#84cc16"/>
+  </g>
+
+  <!-- ===== CONNECTIVITY ARROWS (Subtle directional flow) ===== -->
+  <!-- Dashed flow arrows showing ecological/air corridor movement -->
+  <g fill="none" stroke="#0d9488" stroke-width="1.4" stroke-dasharray="4 3" stroke-linecap="round">
+    <path d="M 55 142 Q 100 128 140 132"/>
+    <path d="M 240 132 Q 275 125 315 127"/>
+    <path d="M 190 170 Q 190 185 190 198"/>
+  </g>
+  <!-- Arrow heads -->
+  <polygon points="140,130 133,127 133,135" fill="#0d9488"/>
+  <polygon points="315,125 308,122 308,130" fill="#0d9488"/>
+  <polygon points="188,199 185,192 193,192" fill="#0d9488"/>
+
+  <!-- ===== WATER / PERMEABLE SURFACE DRAINAGE INDICATORS ===== -->
+  <!-- Small permeable patch highlighting -->
+  <polygon points="30,160 70,140 75,148 35,168" fill="#84cc16" opacity="0.3"/>
+  <polygon points="305,145 345,125 350,133 310,153" fill="#84cc16" opacity="0.3"/>
+</svg>

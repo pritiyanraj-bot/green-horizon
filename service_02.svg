@@ -1,0 +1,101 @@
+<svg class="service-art-svg" viewBox="0 0 340 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Architectural resilience blueprint illustration showing climate adaptation planning">
+  <defs>
+    <!-- Blueprint architectural drafting grid -->
+    <pattern id="c2-grid" width="14" height="14" patternUnits="userSpaceOnUse">
+      <path d="M 14 0 L 0 0 0 14" fill="none" stroke="#174d3b" stroke-width="0.75" stroke-opacity="0.15"/>
+    </pattern>
+    <pattern id="c2-sedum-hatch" width="8" height="8" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="8" x2="8" y2="0" stroke="#174d3b" stroke-width="0.8" opacity="0.4"/>
+      <circle cx="4" cy="4" r="1.2" fill="#174d3b" opacity="0.6"/>
+    </pattern>
+    <pattern id="c2-permeable" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect x="1" y="1" width="8" height="8" fill="none" stroke="#174d3b" stroke-width="0.75" opacity="0.25"/>
+    </pattern>
+  </defs>
+
+  <!-- Lime Blueprint Base -->
+  <rect width="100%" height="100%" rx="12" fill="#b0e554"/>
+  <rect width="100%" height="100%" rx="12" fill="url(#c2-grid)"/>
+
+  <!-- Blueprint Header Pill (Top Left) -->
+  <g transform="translate(18, 14)">
+    <rect x="0" y="0" width="125" height="18" rx="9" fill="#174d3b"/>
+    <circle cx="9" cy="9" r="3.5" fill="#c7f36a"/>
+    <text x="20" y="12.5" fill="#f5f6e9" font-family="'DM Sans',sans-serif" font-size="7.5" font-weight="800" letter-spacing="0.8">ADAPTATION PLAN</text>
+  </g>
+
+  <!-- Cooling Target Badge (Top Right) -->
+  <g transform="translate(262, 14)">
+    <rect x="0" y="0" width="60" height="18" rx="9" fill="#f7f6ed" stroke="#174d3b" stroke-width="1"/>
+    <text x="30" y="12.5" fill="#174d3b" font-family="'DM Sans',sans-serif" font-size="8" font-weight="800" text-anchor="middle">ΔT: -4.5°C</text>
+  </g>
+
+  <!-- Ground Plane: Permeable Paving Grid -->
+  <polygon points="35,116 160,72 305,110 175,152" fill="url(#c2-permeable)"/>
+  <polygon points="35,116 160,72 305,110 175,152" fill="none" stroke="#174d3b" stroke-width="1.2" stroke-dasharray="4 2"/>
+
+  <!-- Subterranean Infiltration Arrow Indicators -->
+  <g stroke="#174d3b" stroke-width="1.2" stroke-linecap="round">
+    <line x1="75" y1="124" x2="75" y2="134"/>
+    <polyline points="72,131 75,135 78,131"/>
+    <line x1="105" y1="134" x2="105" y2="144"/>
+    <polyline points="102,141 105,145 108,141"/>
+  </g>
+
+  <!-- ================= BUILDING BLUEPRINT AXONOMETRIC ================= -->
+  <g stroke="#174d3b" stroke-width="1.5" stroke-linejoin="round">
+    <!-- Left Facade: Living Trellis Wall -->
+    <polygon points="85,128 165,98 165,56 85,86" fill="#f6f5ea"/>
+    <!-- Wire Trellis Pattern -->
+    <line x1="85" y1="104" x2="165" y2="74" stroke="#174d3b" stroke-width="1" stroke-dasharray="2 2"/>
+    <line x1="85" y1="116" x2="165" y2="86" stroke="#174d3b" stroke-width="1" stroke-dasharray="2 2"/>
+    <!-- Climbing Foliage Patches -->
+    <ellipse cx="102" cy="102" rx="8" ry="12" fill="#286752" stroke="none"/>
+    <ellipse cx="128" cy="87" rx="10" ry="14" fill="#3b7a57" stroke="none"/>
+    <ellipse cx="150" cy="76" rx="7" ry="10" fill="#174d3b" stroke="none"/>
+
+    <!-- Right Facade -->
+    <polygon points="165,98 235,72 235,30 165,56" fill="#fcfbf7"/>
+    <!-- Architectural Window Mullions -->
+    <line x1="180" y1="90" x2="180" y2="50" stroke="#174d3b" stroke-width="1"/>
+    <line x1="210" y1="80" x2="210" y2="40" stroke="#174d3b" stroke-width="1"/>
+
+    <!-- Intensive Green Roof Layer (Retrofit) -->
+    <polygon points="85,86 165,56 235,30 155,60" fill="url(#c2-sedum-hatch)"/>
+    <polygon points="85,86 165,56 235,30 155,60" fill="none" stroke="#174d3b" stroke-width="2"/>
+    <!-- Parapet Sedum Thickness Slab -->
+    <polygon points="85,86 155,60 165,56 85,83" fill="#286752"/>
+
+    <!-- Rooftop Sedum Flora Clusters -->
+    <ellipse cx="115" cy="75" rx="12" ry="6" fill="#174d3b"/>
+    <ellipse cx="145" cy="63" rx="14" ry="7" fill="#286752"/>
+    <ellipse cx="185" cy="49" rx="14" ry="6" fill="#3b7a57"/>
+    <ellipse cx="160" cy="55" rx="8" ry="4" fill="#84cc16"/>
+  </g>
+
+  <!-- Natural Shade Tree Canopy with Radial Shade Footprint -->
+  <g transform="translate(230, 90)">
+    <!-- Radial Shade Footprint (Dashed Arc) -->
+    <ellipse cx="30" cy="35" rx="42" ry="16" fill="#174d3b" opacity="0.2" stroke="#174d3b" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <!-- Tree Trunk -->
+    <path d="M30 35 Q28 20 27 5 Q24 20 23 35" fill="#5a3d28" stroke="#174d3b" stroke-width="1.2"/>
+    <!-- Canopy Foliage Clusters -->
+    <circle cx="15" cy="-2" r="17" fill="#174d3b" stroke="#174d3b" stroke-width="1.2"/>
+    <circle cx="35" cy="-8" r="21" fill="#286752" stroke="#174d3b" stroke-width="1.2"/>
+    <circle cx="25" cy="-22" r="15" fill="#529938" stroke="#174d3b" stroke-width="1.2"/>
+  </g>
+
+  <!-- Clean Technical Dimension Line (Left Side) -->
+  <g stroke="#174d3b" stroke-width="1" stroke-linecap="round">
+    <line x1="80" y1="136" x2="160" y2="106"/>
+    <line x1="80" y1="132" x2="80" y2="140"/>
+    <line x1="160" y1="102" x2="160" y2="110"/>
+    <text x="118" y="118" fill="#174d3b" font-family="'DM Sans',sans-serif" font-size="6" font-weight="800" transform="rotate(-21 118 118)">28.50 m</text>
+  </g>
+
+  <!-- Clean Minimal NBS Feature Labels (Bottom Left, No Overlap) -->
+  <g transform="translate(18, 138)">
+    <rect x="0" y="0" width="112" height="17" rx="4" fill="#174d3b"/>
+    <text x="56" y="11.5" fill="#c7f36a" font-family="'DM Sans',sans-serif" font-size="6.5" font-weight="800" text-anchor="middle" letter-spacing="0.5">NBS ROADMAP READY ✓</text>
+  </g>
+</svg>
